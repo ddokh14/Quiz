@@ -1,0 +1,20 @@
+input {
+    height: 50px;
+    border: 1px solid rgb(204, 203, 203);
+    box-sizing: border-box;
+    width: 70%;
+    padding-left:10px;
+}
+button{
+    height: 50px;
+    width: 30%;
+    box-sizing: border-box;
+    background-color:rgb(204, 203, 203);
+    border: 1px solid rgb(204, 203, 203);
+    color:white;
+    cursor: pointer;
+}
+
+input:focus, button:focus{
+    outline: none;
+}

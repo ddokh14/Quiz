@@ -1,0 +1,17 @@
+li {
+    list-style: none;
+    text-align: center;
+    border:1px solid rgb(204, 203, 203);
+    height: 50px;
+    color:grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+li:hover{
+    background-color:rgb(204, 203, 203);
+    color:white;
+}

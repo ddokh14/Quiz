@@ -1,0 +1,19 @@
+.footer-item{
+    float:left;
+    padding:10px;
+    border:1px solid rgb(204, 203, 203);
+    margin-right:10px;
+    background-color:rgb(204, 203, 203);
+    border: 1px solid rgb(204, 203, 203);
+    color:white;
+    cursor: pointer;
+    height: 50px;
+    box-sizing: border-box;
+    font: 400 13.3333px Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item:last-of-type{
+    margin:0;
+}
