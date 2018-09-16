@@ -1,11 +1,13 @@
 import React from 'react'
 import './Input.css'
 
-const Input = () => {
+const Input = ({onAddItem}) => {
     return(
         <div>
-            <input type='text' placeholder='შეიყვანეთ'/>
-            <button type ='submit'>დამატება</button>
+            <form onSubmit={onAddItem}>
+                <input type='text' ref={node => this.textValue = node } placeholder='შეიყვანეთ'/>
+                <button type ='submit' >დამატება</button>
+            </form>
         </div>
     );
 }

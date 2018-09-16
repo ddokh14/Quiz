@@ -5,15 +5,31 @@ import List from '../List/List'
 import Footer from '../Footer/Footer'
 
 
-const Application = () => {
-    return (
-        <div>
-            <p>სატესტო აპლიკაცია</p>
-            <Input/>
-            <List/>
-            <Footer/>
-        </div>
-    );
+
+
+class Application extends React.Component {
+
+    state = {
+        list : []
+    }
+
+
+    onAddItem = (event) => {
+        event.preventDefault();
+        this.setState({
+            list: [...this.state.list, event.target[0].value]
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <Input onAddItem = {this.onAddItem}/>
+                <List list={this.state.list}/>
+                <Footer/>
+            </div>
+        );  
+    }
 }
 
 export default Application;
